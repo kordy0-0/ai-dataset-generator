@@ -37,7 +37,7 @@ pip install -r requirements.txt
 You'll need an OpenAI API key. Create a `.env` file:
 
 ```bash
-echo "OPENAI_API_KEY=your_actual_key_here" > .env
+echo "OPENAI_API_KEY=your_actual_key_here" .env
 ```
 Don't use the free tier if you're generating a lot of data - you'll hit rate limits fast. I spent about $30 for this activity
 
