@@ -164,7 +164,7 @@ You can also build your own from scratch if the templates don't fit.
 
 ## Real Talk About Costs
 
-Using OpenAI's API isn't free. For my 50-scenario medical dataset, I spent maybe $15-20 in API costs. Not terrible, but something to keep in mind. The `gpt-4o-mini` model is cheaper and works fine for most use cases.
+Using OpenAI's API isn't free. For my 50-scenario medical dataset, I spent maybe ~ $30 in API costs. Not terrible, but something to keep in mind. The `gpt-4o-mini` model is cheaper and works fine for most use cases.
 
 ## What You'll Get
 
