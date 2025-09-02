@@ -1,6 +1,4 @@
-# AI Training Dataset Generator
-
-*Because dataset preparation shouldn't be the hardest part of fine-tuning*
+<img width="1536" height="1024" alt="ChatGPT Image Sep 2, 2025, 03_46_09 PM" src="https://github.com/user-attachments/assets/a159f7f1-1b12-4811-8282-762e01812f68" />
 
 ## Why I Built This
 
