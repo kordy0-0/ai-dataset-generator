@@ -1,22 +1,26 @@
-<img width="1536" height="1024" alt="ChatGPT Image Sep 2, 2025, 03_46_09 PM" src="https://github.com/user-attachments/assets/a159f7f1-1b12-4811-8282-762e01812f68" />
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/b10440d5-e361-45ad-baa3-bfe186974534" />
+
+# AI Training Dataset Generator
+
+*Because dataset preparation shouldn't be the hardest part of fine-tuning*
 
 ## Why I Built This
 
-Look, I'll be honest with you. I spent way too much time manually creating training datasets for fine-tuning models. You know the drill - you have all this domain knowledge sitting in PDFs, SOPs, and documents, but turning that into actual training data? That's a different beast entirely.
+Look, I'll be honest with you. I spent too much time manually creating training datasets for fine-tuning models as an experiment. You have all this domain knowledge sitting in PDFs, but turning that into actual training data? That's a different beast entirely.
 
-I was working on a medical compliance project (tissue donation stuff - pretty niche), and I needed to fine-tune a model to understand very specific regulatory requirements. Not general medical knowledge, but the exact wording of particular SOPs and how they applied to real scenarios.
+I was working on a medical compliance project and I needed to fine-tune a model (using OpenAI Finetuning) to understand very specific regulatory requirements. Not general medical knowledge, but the exact wording of particular SOPs and how they applied to real scenarios. So that I didnt not have to build a complex application.
 
-After weeks of manually writing scenarios and responses, I thought "there has to be a better way." So I built this tool. It worked so well for my use case that I figured other people might be dealing with the same frustration.
+After manually writing datasets, I thought "there has to be a better way, specially when AI exists" So I built this tool. It worked so well for my use case that I figured other people might be dealing with the same frustration. I was able to bake my SOP's into an OpenAI GPT model and did a test and it was pretty accurate.
 
 ## What This Actually Does
 
-This tool takes your domain knowledge (whatever format it's in) and generates realistic training scenarios with expert-level responses. It's not magic - it uses the knowledge you already have and creates training pairs that actually make sense for your specific field.
+This tool takes your domain knowledge (PDF's) and generates realistic training scenarios with expert-level responses. It's not magic - it uses the knowledge you already have and creates training pairs that actually make sense for your specific field.
 
 Here's what happened when I used it:
-- Fed it some medical SOPs (those PDF documents nobody wants to read)
+- Fed it some domain specific SOPs (those PDF documents nobody wants to read, just make sure the PDF's are OCR ready, else use a parsing tool to get acccurate extract's else the dataset will be of no use.)
 - Got back 50+ realistic compliance scenarios with detailed, accurate responses
 - Fine-tuned a model that actually understood the nuances of the regulations
-- Saved probably 2-3 weeks of manual dataset creation
+- Saved probably 2-3 weeks of manual dataset creation and making of a complex app
 
 ## Getting Started (The Real Way)
 
@@ -35,8 +39,7 @@ You'll need an OpenAI API key. Create a `.env` file:
 ```bash
 echo "OPENAI_API_KEY=your_actual_key_here" > .env
 ```
-
-Don't use the free tier if you're generating a lot of data - you'll hit rate limits fast. I learned this the hard way.
+Don't use the free tier if you're generating a lot of data - you'll hit rate limits fast. I spent about $30 for this activity
 
 ### Add your knowledge:
 
@@ -91,7 +94,7 @@ Don't generate 500 scenarios on your first run. Start with 10-20, see if the qua
 The default prompts work okay, but you'll probably want to tweak them for your specific domain. I spent time getting the "expert voice" right for medical compliance.
 
 ### PDF quality varies
-Some PDFs extract beautifully, others are a mess. If you have important documents that are image-based or have weird formatting, you might need to clean them up first.
+Some PDFs extract beautifully, others are a mess. If you have important documents that are image-based or have weird formatting, you might need to clean them up first using a good parsing tool.
 
 ## Different Domains I've Tried
 
@@ -177,11 +180,11 @@ The training pairs look like real expert conversations:
   "messages": [
     {
       "role": "user",
-      "content": "We have a donor with a history of melanoma excised 4 years 11 months ago. All other criteria are met. What's the eligibility decision per MD-002?"
+      "content": "A contractor wants to use a new chemical cleaning agent in our facility. The safety data sheet shows it's flammable with a flash point of 85°F. Our facility policy requires flash points above 100°F. What's the safety assessment?"
     },
     {
       "role": "assistant", 
-      "content": "DECISION: REJECT\n\nRATIONALE: Per MD-002 Section 4.3.4, melanoma requires >5 years disease-free, not ≥5 years. At 4 years 11 months, this donor does not meet the >5 year requirement..."
+      "content": "DECISION: REJECT\n\nRATIONALE: Per Safety Policy Section 3.2.1, all cleaning chemicals must have flash points >100°F for indoor use. At 85°F, this chemical does not meet our minimum safety requirements and poses an unacceptable fire risk in our facility environment..."
     }
   ]
 }
@@ -191,7 +194,7 @@ The training pairs look like real expert conversations:
 
 1. **Quality over quantity**: 50 good examples beats 200 mediocre ones
 2. **Review before training**: Always spot-check the generated scenarios
-3. **Start with base models**: I used `gpt-3.5-turbo` for my first fine-tune
+3. **Start with base models**: I used `gpt-4.1-mini-2025-04-14` for my first fine-tune
 4. **Test extensively**: Your fine-tuned model will be very specific to your domain
 
 ## When This Works Well
@@ -211,12 +214,6 @@ The training pairs look like real expert conversations:
 ## Contributing
 
 I built this for my specific need, but I've tried to make it general enough for other people to use. If you find bugs or have ideas for improvements, feel free to contribute.
-
-Things that would be helpful:
-- Support for more document formats (Word docs, web pages)
-- Better text extraction from messy PDFs
-- More domain-specific templates
-- Examples from different fields
 
 ## License
 
