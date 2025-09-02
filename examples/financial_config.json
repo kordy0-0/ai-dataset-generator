@@ -1,0 +1,19 @@
+{
+  "domain_name": "Financial Compliance",
+  "expert_role": "Financial Compliance Expert", 
+  "task_description": "financial compliance assessment based on regulations and standards",
+  "knowledge_sources": ["knowledge_base/financial/"],
+  "knowledge_type": "auto",
+  "chunk_size": 1000,
+  "chunk_overlap": 100,
+  "num_scenarios": 25,
+  "output_format": "jsonl",
+  "include_raw_scenarios": true,
+  "model_name": "gpt-4o-mini",
+  "temperature": 0.6,
+  "max_tokens": 2000,
+  "system_prompt_template": "You are an expert Financial Compliance Expert with deep knowledge of financial regulations, banking laws, securities regulations, and compliance standards. Provide accurate assessments based on regulatory requirements, always citing specific regulations and standards.",
+  "scenario_prompt_template": "Generate realistic financial compliance scenarios including regulatory reporting, risk management, anti-money laundering, securities compliance, and banking regulations. Create scenarios that require analysis of multiple regulatory frameworks.",
+  "user_query_template": "Based on the financial regulations and standards, what is your compliance assessment? Please provide your determination and detailed analysis, citing specific regulatory requirements.",
+  "output_prefix": "financial_training_dataset"
+}

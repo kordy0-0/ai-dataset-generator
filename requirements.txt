@@ -1,0 +1,38 @@
+# AI Training Dataset Generator Requirements
+
+# Core AI framework
+agno[all]>=0.2.0
+
+# OpenAI API
+openai>=1.0.0
+
+# PDF processing
+PyMuPDF>=1.23.0
+
+# Data handling
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Environment management
+python-dotenv>=1.0.0
+
+# File handling and utilities
+pathlib
+typing_extensions>=4.7.0
+
+# Optional: Enhanced text processing
+nltk>=3.8
+regex>=2023.0.0
+
+# Optional: Progress bars and UI
+tqdm>=4.66.0
+rich>=13.0.0
+
+# Development and testing (optional)
+pytest>=7.4.0
+black>=23.0.0
+flake8>=6.0.0
+
+# Documentation (optional)
+mkdocs>=1.5.0
+mkdocs-material>=9.0.0

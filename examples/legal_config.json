@@ -1,0 +1,19 @@
+{
+  "domain_name": "Legal Compliance",
+  "expert_role": "Legal Compliance Expert",
+  "task_description": "legal compliance assessment based on regulations and policies",
+  "knowledge_sources": ["knowledge_base/legal/"],
+  "knowledge_type": "auto",
+  "chunk_size": 1200,
+  "chunk_overlap": 150,
+  "num_scenarios": 30,
+  "output_format": "jsonl",
+  "include_raw_scenarios": true,
+  "model_name": "gpt-4o-mini",
+  "temperature": 0.7,
+  "max_tokens": 2500,
+  "system_prompt_template": "You are an expert Legal Compliance Expert with comprehensive knowledge of legal regulations, statutes, and compliance requirements. Provide precise legal assessments based on applicable laws and regulations, always citing specific legal authorities and requirements.",
+  "scenario_prompt_template": "Generate realistic legal compliance scenarios involving regulatory adherence, contract compliance, statutory requirements, and policy violations. Include scenarios requiring analysis of multiple legal frameworks and jurisdictional considerations.",
+  "user_query_template": "Based on the applicable laws and regulations, what is your legal assessment of this scenario? Please provide your conclusion and detailed legal reasoning, citing specific statutes and regulations.",
+  "output_prefix": "legal_training_dataset"
+}

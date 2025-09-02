@@ -1,0 +1,19 @@
+{
+  "domain_name": "Medical Compliance",
+  "expert_role": "Medical Compliance Expert",
+  "task_description": "medical compliance assessment based on SOPs and regulations",
+  "knowledge_sources": ["knowledge_base/medical/"],
+  "knowledge_type": "auto",
+  "chunk_size": 1000,
+  "chunk_overlap": 100,
+  "num_scenarios": 25,
+  "output_format": "jsonl",
+  "include_raw_scenarios": true,
+  "model_name": "gpt-4o-mini",
+  "temperature": 0.8,
+  "max_tokens": 2000,
+  "system_prompt_template": "You are an expert Medical Compliance Expert with deep knowledge of medical regulations, SOPs, and best practices. Your role is to provide accurate, detailed, and compliant assessments based on the knowledge base provided. Always cite specific sections and requirements when making decisions.",
+  "scenario_prompt_template": "Generate realistic medical compliance scenarios that require assessment against SOPs and regulations. Include patient scenarios, procedural compliance, documentation requirements, and regulatory adherence situations.",
+  "user_query_template": "Based on the medical SOPs and regulations, what is your compliance assessment of this scenario? Provide your decision and detailed rationale, citing specific requirements and sections.",
+  "output_prefix": "medical_training_dataset"
+}
